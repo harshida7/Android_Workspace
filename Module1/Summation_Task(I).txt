@@ -1,0 +1,18 @@
+fun main()
+{
+    var num = 123456
+  
+    var sum = 0
+    var temp = num
+         
+    while(temp != 0)
+    {
+    
+        val digt = temp % 10
+        sum += digt
+       temp /= 10 
+       
+    }
+
+    println("sum of $num is $sum")
+}
