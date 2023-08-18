@@ -1,12 +1,17 @@
-fun start() :String
+fun start() : String?
 {
-    var str1 = "OK"
 
-    return str1
+    println("enter any msg")
+    var msg = readLine()
+
+    //println(msg)
+    return msg
+
 }
 
 fun main ()
 {
-    println(start())
+    println("User Entered Txt Is :: " + start())
 
 }
+
