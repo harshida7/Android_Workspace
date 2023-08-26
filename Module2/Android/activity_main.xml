@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <ImageView
+       android:id="@+id/img1"
+       android:layout_width="match_parent"
+       android:layout_height="150dp"
+       android:layout_marginTop="50dp"
+       android:src="@drawable/india" />
+
+   <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="India"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FF671F"
+        android:gravity="center"
+        android:layout_below="@id/img1"/>
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/austrelia"
+        android:layout_below="@id/txt1"/>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Australia"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#00008B"
+        android:layout_below="@id/img2"/>
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/canada"
+        android:layout_below="@id/txt2"/>
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Canada"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#D80621"
+        android:gravity="center"
+        android:layout_below="@id/img3"/>
+
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/germany"
+        android:layout_below="@id/txt3"/>
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Germany"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffce00"
+        android:gravity="center"
+        android:layout_below="@id/img4"/>
+
+    <ImageView
+        android:id="@+id/img5"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/usa"
+        android:layout_below="@id/txt4"/>
+
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="USA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#BF0A30"
+        android:gravity="center"
+        android:layout_below="@id/img5"/>
+</RelativeLayout>
+</ScrollView>
