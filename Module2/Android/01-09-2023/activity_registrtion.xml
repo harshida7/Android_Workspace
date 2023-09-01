@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrtionActivity">
+
+    <EditText
+        android:id="@+id/edtLname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter FirstName"/>
+    <EditText
+        android:id="@+id/edtFname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter LastName"
+        android:layout_below="@id/edtLname"
+        />
+ <EditText
+        android:id="@+id/edtDOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Birthdate MM/DD/YYYY"
+        android:layout_below="@id/edtFname" />
+
+    <EditText
+        android:id="@+id/edtGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Gender"
+        android:layout_below="@id/edtDOB" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:layout_below="@id/edtGender" />
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/edtEmail"
+        />
+    <EditText
+        android:id="@+id/edtCPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/edtPass"
+        />
+
+    <Button
+        android:id="@+id/btnReg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="25dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/edtCPass"
+        />
+
+
+</RelativeLayout>
