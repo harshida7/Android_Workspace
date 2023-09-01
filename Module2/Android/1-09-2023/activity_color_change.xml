@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+    android:id="@+id/L1"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:context=".ColorChange">
+
+       <Button
+           android:id="@+id/btnRed"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:text="RED"
+           />
+    <Button
+        android:id="@+id/btngreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="GREEN"
+        android:layout_below="@id/btnRed"
+        />
+    <Button
+        android:id="@+id/btnBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="BLUE"
+        android:layout_below="@id/btngreen"
+        />
+
+
+    <Button
+        android:id="@+id/btnChnge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="CHANGE SCREEN"
+        android:layout_marginTop="50dp"
+        android:background="@color/design_default_color_secondary_variant"
+        android:layout_below="@id/btnBlue"
+        />
+
+    </RelativeLayout>
