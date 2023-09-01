@@ -4,11 +4,14 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.speech.tts.TextToSpeech
+import android.speech.tts.TextToSpeech.QUEUE_ADD
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import java.util.Locale
 
-class ProductShow : AppCompatActivity() {
+class ProductShow : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     lateinit var goldImg:ImageView
     lateinit var paneerImg:ImageView
@@ -25,6 +28,7 @@ class ProductShow : AppCompatActivity() {
     lateinit var txt_cheese:TextView
     lateinit var txt_icecream:TextView
     lateinit var txt_kool:TextView
+    lateinit var tts: TextToSpeech
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -47,13 +51,19 @@ class ProductShow : AppCompatActivity() {
         txt_kool = findViewById(R.id.tp6)
         txt_paneer = findViewById(R.id.tp7)
 
+        tts = TextToSpeech(applicationContext,this)
+
         goldImg.setOnClickListener {
 
-            //implicit
+           /* //implicit
             var goldUrl="https://amul.com/products/amul-gold-info.php"
             var i = Intent(Intent.ACTION_VIEW)
             i.setData(Uri.parse(goldUrl))
-            startActivity(i)
+              startActivity(i)*/
+
+            var txt1= txt_gold.text.toString()
+            tts.speak(txt1,QUEUE_ADD,null)
+
         }
 
         txt_gold.setOnClickListener {
@@ -63,11 +73,13 @@ class ProductShow : AppCompatActivity() {
 
         butterImg.setOnClickListener {
 
-            //implicit
+            /*//implicit
             var butterUrl="https://amul.com/products/amul-tablebutter-info.php"
             var i = Intent(Intent.ACTION_VIEW)
             i.setData(Uri.parse(butterUrl))
-            startActivity(i)
+            startActivity(i)*/
+            var txt2= txt_butter.text.toString()
+            tts.speak(txt2,QUEUE_ADD,null)
         }
 
         txt_butter.setOnClickListener {
@@ -77,11 +89,16 @@ class ProductShow : AppCompatActivity() {
 
         cheeseImg.setOnClickListener {
 
+/*
             //implicit
             var cheeseUrl="https://amul.com/products/amul-processedcheese-info.php"
             var i = Intent(Intent.ACTION_VIEW)
             i.setData(Uri.parse(cheeseUrl))
             startActivity(i)
+*/
+
+            var txt3= txt_cheese.text.toString()
+            tts.speak(txt3,QUEUE_ADD,null)
         }
 
         txt_cheese.setOnClickListener {
@@ -91,11 +108,14 @@ class ProductShow : AppCompatActivity() {
 
         gheeImg.setOnClickListener {
 
-            //implicit
+            /*//implicit
             var gheeUrl="https://amul.com/products/amul-ghee-info.php"
             var i = Intent(Intent.ACTION_VIEW)
             i.setData(Uri.parse(gheeUrl))
-            startActivity(i)
+            startActivity(i)*/
+
+            var txt4= txt_ghee.text.toString()
+            tts.speak(txt4,QUEUE_ADD,null)
         }
 
         txt_ghee.setOnClickListener {
@@ -105,11 +125,13 @@ class ProductShow : AppCompatActivity() {
 
         icecreamImg.setOnClickListener {
 
-            //implicit
+            /*//implicit
             var icecreamUrl="https://amul.com/products/amul-tricone-choco-crunch-icecream-info.php"
             var i = Intent(Intent.ACTION_VIEW)
             i.setData(Uri.parse(icecreamUrl))
-            startActivity(i)
+            startActivity(i)*/
+            var txt5= txt_icecream.text.toString()
+            tts.speak(txt5,QUEUE_ADD,null)
         }
 
         txt_icecream.setOnClickListener {
@@ -118,12 +140,15 @@ class ProductShow : AppCompatActivity() {
         }
 
         koolImg.setOnClickListener {
-
+/*
             //implicit
             var koolUrl="https://amul.com/products/Amul-Kool-Flavoured-Milk.php"
             var i = Intent(Intent.ACTION_VIEW)
             i.setData(Uri.parse(koolUrl))
-            startActivity(i)
+            startActivity(i)*/
+
+            var txt6= txt_kool.text.toString()
+            tts.speak(txt6,QUEUE_ADD,null)
         }
 
         txt_kool.setOnClickListener {
@@ -133,11 +158,14 @@ class ProductShow : AppCompatActivity() {
 
         paneerImg.setOnClickListener {
 
-            //implicit
+            /*//implicit
             var koolUrl="https://amul.com/products/amul-freshpaneer-info.php"
             var i = Intent(Intent.ACTION_VIEW)
             i.setData(Uri.parse(koolUrl))
-            startActivity(i)
+            startActivity(i)*/
+
+            var txt7= txt_paneer.text.toString()
+            tts.speak(txt7,QUEUE_ADD,null)
         }
 
         txt_paneer.setOnClickListener {
@@ -145,4 +173,11 @@ class ProductShow : AppCompatActivity() {
             Toast.makeText(applicationContext, "180 Rs", Toast.LENGTH_SHORT).show()
         }
     }
+
+    override fun onInit(p0: Int) {
+    tts.setLanguage(Locale.US)
+            tts.setPitch(0.8f)
+            tts.setSpeechRate(1f)
+    }
+
 }
