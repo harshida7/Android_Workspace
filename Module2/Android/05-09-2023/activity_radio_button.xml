@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    tools:context=".RadioButton">
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the num1"/>
+
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the num2"
+        android:layout_below="@id/edt1"/>
+    <RadioGroup
+        android:id="@+id/Rd1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt2">
+
+        <RadioButton
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+"/>
+
+        <RadioButton
+            android:id="@+id/sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"/>
+
+        <RadioButton
+            android:id="@+id/multi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*"/>
+
+        <RadioButton
+            android:id="@+id/div"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="/"/>
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/btnRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:layout_below="@id/Rd1"/>
+
+
+    <Button
+        android:id="@+id/btnHide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hide TextView"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/btnRes"/>
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show TextView"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/btnHide"/>
+
+    <Button
+        android:id="@+id/btnPdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Pdf"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/btnShow"/>
+
+    <Button
+        android:id="@+id/btnGoActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Table Layout Activity"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/btnPdf"/>
+
+    <TextView
+        android:id="@+id/txtR"
+        android:gravity="center"
+        android:textSize="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnGoActivity"/>
+</RelativeLayout>
