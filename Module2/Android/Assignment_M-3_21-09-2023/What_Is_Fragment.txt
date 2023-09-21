@@ -1,0 +1,16 @@
+-----------------------------------	Fragment -------------------------------
+
+	Multiple Screens in one activity
+	
+	Types Of Fragment
+	
+	1) Static		->		Launching By Xml
+	2) Dynamic	-> 	Launching By Kotlin
+	
+	-> Every Fragment Needs an activity for launching
+
+	Transactions:
+		1) A to A->Intent
+		2) A to F->Manager
+		3) F to A->Intent
+		4) F to F->Manager
