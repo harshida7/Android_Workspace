@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="10dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/RegisterTitleTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTRATION"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/edtFName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter First Name"
+        />
+
+    <EditText
+        android:id="@+id/edtLName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Last Name"
+        />
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        />
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        />
+    <EditText
+        android:id="@+id/edtCPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        />
+
+    <TextView
+        android:id="@+id/GenderTitleTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Gender"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Male" />
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Female"/>
+
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/hobbyTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Your Hobby"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+    <CheckBox
+        android:id="@+id/chkHobby1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Playing Table Tannis"/>
+    <CheckBox
+        android:id="@+id/chkHobby2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Playing Cricket"/>
+    <CheckBox
+        android:id="@+id/chkHobby3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Playing Basketball"/>
+
+    <EditText
+        android:id="@+id/edtDob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Birthdate (DD/MM/YYYY)"
+        android:inputType="date"
+        />
+    <EditText
+        android:id="@+id/edtTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Time (HH/MM)"
+        android:inputType="time"
+        />
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/btnFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
