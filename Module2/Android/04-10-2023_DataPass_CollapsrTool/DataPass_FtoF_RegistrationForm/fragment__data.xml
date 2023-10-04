@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/frm1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".Fragment_Data">
+
+
+
+        <TextView
+            android:id="@+id/RegisterTitleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="REGISTRATION"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/edtFName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter First Name"
+            android:layout_marginTop="100dp"/>
+
+        <EditText
+            android:id="@+id/edtLName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Last Name"
+            android:layout_marginTop="150dp"/>
+
+        <EditText
+            android:id="@+id/edtDob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Birthdate (DD/MM/YYYY)"
+            android:layout_marginTop="200dp"/>
+
+        <TextView
+            android:id="@+id/txtGender"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Select Gender :"
+            android:textSize="20dp"
+            android:layout_marginTop="250dp"/>
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="275dp">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Male"/>
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Female"/>
+
+
+        </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtHobby"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Select Hobby :"
+        android:textSize="20dp"
+        android:layout_marginTop="365dp"/>
+<CheckBox
+    android:id="@+id/chk1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Playing Table Tannis"
+    android:layout_marginTop="385dp"/>
+    <CheckBox
+        android:id="@+id/chk2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Playing Chess"
+        android:layout_marginTop="420dp"/>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email Address"
+            android:layout_marginTop="450dp"/>
+
+        <EditText
+            android:id="@+id/edtPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:layout_marginTop="490dp"
+            android:inputType="textPassword"/>
+        <Button
+            android:id="@+id/btnLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:layout_marginTop="230dp"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
